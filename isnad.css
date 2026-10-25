@@ -1,0 +1,32 @@
+@font-face{font-family:"Hacen Tunisia";font-weight:400;src:local("Hacen Tunisia"),local("HacenTunisia"),url("chrome-extension://__MSG_@@extension_id__/fonts/HacenTunisia.ttf") format("truetype")}
+@font-face{font-family:"Hacen Tunisia";font-weight:700;src:local("Hacen Tunisia Bold"),local("HacenTunisia-Bold"),url("chrome-extension://__MSG_@@extension_id__/fonts/HacenTunisia-Bold.ttf") format("truetype"),local("Hacen Tunisia"),url("chrome-extension://__MSG_@@extension_id__/fonts/HacenTunisia.ttf") format("truetype")}
+#amq5-overlay{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:100000;display:none;align-items:center;justify-content:center;direction:rtl;font-family:"Hacen Tunisia",Tahoma,Arial,sans-serif}
+#amq5-overlay.open{display:flex}
+#amq5-panel{background:#fff;width:680px;max-width:95vw;max-height:92vh;overflow:auto;border-radius:10px;padding:18px 20px;box-shadow:0 8px 30px rgba(0,0,0,.4);color:#222}
+#amq5-panel h3{margin:0 0 10px;font-size:19px}
+#amq5-panel label{display:block;font-size:13px;color:#444;margin:4px 0 3px}
+#amq5-panel select{width:100%;box-sizing:border-box;padding:7px 9px;border:1px solid #aaa;border-radius:5px;font:14px "Hacen Tunisia",Tahoma,Arial}
+.amq5-top{display:flex;gap:10px;align-items:flex-end}.amq5-top>div{flex:1}
+.amq5-note{font-size:12.5px;margin:6px 0;min-height:16px}
+.amq5-card{border:1px solid #cfd8e3;border-radius:8px;padding:8px 10px;margin:8px 0;background:#f8fbff}
+.amq5-head{display:flex;gap:6px;align-items:center}
+.amq5-x{border:0;background:#fde2e2;color:#b00;border-radius:5px;cursor:pointer;padding:6px 10px;font:bold 13px "Hacen Tunisia",Tahoma,Arial}
+.amq5-divs{display:grid;grid-template-columns:repeat(4,1fr);gap:2px 8px;margin-top:6px}
+.amq5-divs label,.amq5-opt,#amq5-sublist label,.amq5-sublist label{display:flex;align-items:center;gap:6px;margin:2px 0;font-size:13px;color:#222;cursor:pointer}
+.amq5-mode{margin-top:6px;border-top:1px dashed #cfd8e3;padding-top:6px}
+.amq5-sublist small{color:#777}
+#amq5-sublist,.amq5-sublist{display:grid;grid-template-columns:1fr 1fr;gap:0 10px;margin-top:4px;max-height:140px;overflow:auto}
+.amq5-link{border:0;background:none;color:#1a6fd6;cursor:pointer;font:13px "Hacen Tunisia",Tahoma,Arial;padding:4px 0}
+.amq5-btn{padding:9px 16px;border:0;border-radius:6px;font:bold 14px "Hacen Tunisia",Tahoma,Arial;cursor:pointer}
+.amq5-go{background:#21ba45;color:#fff;flex:1}.amq5-go:disabled{background:#9ccfa8;cursor:wait}
+.amq5-sec{background:#e8e8e8;color:#222}
+.amq5-row{display:flex;gap:8px;margin-top:12px}
+#amq5-log{margin-top:10px;max-height:190px;overflow:auto;font-size:13px;line-height:1.8}
+#amq5-log .h{font-weight:bold;margin-top:4px}#amq5-log .o{color:#1a7f37}#amq5-log .e{color:#b3261e}
+#amq5-overlay input[type=checkbox],#amq5-overlay input[type=radio]{
+  all:revert !important;-webkit-appearance:auto !important;appearance:auto !important;
+  display:inline-block !important;visibility:visible !important;opacity:1 !important;position:static !important;
+  width:16px !important;height:16px !important;min-width:16px !important;margin:0 4px !important;
+  clip:auto !important;transform:none !important;pointer-events:auto !important;accent-color:#21ba45;cursor:pointer}
+.amq5-danger{background:#fde2e2;color:#b3261e;border:1px solid #e9b4b0}.amq5-danger:hover{background:#f9cfcb}.amq5-danger:disabled{opacity:.5;cursor:wait}
+.amq5-subj .amq5-link{margin-inline-end:16px}

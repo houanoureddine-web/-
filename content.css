@@ -1,0 +1,43 @@
+@font-face{font-family:"Hacen Tunisia";font-weight:400;src:local("Hacen Tunisia"),local("HacenTunisia"),url("chrome-extension://__MSG_@@extension_id__/fonts/HacenTunisia.ttf") format("truetype")}
+@font-face{font-family:"Hacen Tunisia";font-weight:700;src:local("Hacen Tunisia Bold"),local("HacenTunisia-Bold"),url("chrome-extension://__MSG_@@extension_id__/fonts/HacenTunisia-Bold.ttf") format("truetype"),local("Hacen Tunisia"),url("chrome-extension://__MSG_@@extension_id__/fonts/HacenTunisia.ttf") format("truetype")}
+#amq-fab,#amq-fab2{position:fixed;bottom:70px;left:20px;z-index:99999;background:#f2c200;color:#000;border:2px solid #000;border-radius:8px;padding:10px 16px;font:bold 15px "Hacen Tunisia",Tahoma,Arial,sans-serif;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.35)}
+#amq-fab:hover,#amq-fab2:hover{background:#ffd633}
+#amq-overlay,#amq-overlay2{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:100000;display:none;align-items:center;justify-content:center;direction:rtl;font-family:"Hacen Tunisia",Tahoma,Arial,sans-serif}
+#amq-overlay.open,#amq-overlay2.open{display:flex}
+#amq-panel,#amq-panel2{background:#fff;width:560px;max-width:94vw;max-height:90vh;overflow:auto;border-radius:10px;padding:18px 20px;box-shadow:0 8px 30px rgba(0,0,0,.4);color:#222}
+#amq-panel h3,#amq-panel2 h3{margin:0 0 12px;font-size:19px}
+#amq-panel label.f,#amq-panel2 label.f{display:block;margin:8px 0 3px;font-size:13px;color:#444}
+#amq-panel input[type=text],#amq-panel2 input[type=text]{width:100%;box-sizing:border-box;padding:7px 9px;border:1px solid #aaa;border-radius:5px;font:14px "Hacen Tunisia",Tahoma,Arial}
+#amq-groups{border:1px solid #ccc;border-radius:6px;padding:8px 10px;margin-top:6px;max-height:210px;overflow:auto}
+#amq-groups label{display:flex;align-items:center;gap:8px;padding:4px 0;font-size:14px;cursor:pointer}
+#amq-groups small{color:#777;margin-right:auto}
+.amq-row{display:flex;gap:8px;margin-top:12px;align-items:center}
+.amq-btn{padding:9px 16px;border:0;border-radius:6px;font:bold 14px "Hacen Tunisia",Tahoma,Arial;cursor:pointer}
+.amq-go{background:#21ba45;color:#fff;flex:1}
+.amq-go:disabled{background:#9ccfa8;cursor:wait}
+.amq-sec{background:#e8e8e8;color:#222}
+#amq-status,#amq-status2{margin-top:10px;font-size:13px;color:#a33;min-height:18px}
+#amq-fab2{bottom:120px;background:#8fe0a8}
+#amq-fab2:hover{background:#a8f0bf}
+#amq-c-opts label{display:flex;align-items:center;gap:8px;padding:8px 10px;border:1px solid #ccc;border-radius:6px;margin-bottom:8px;font-size:14px;cursor:pointer}
+#amq-c-opts label.dis{opacity:.5;cursor:not-allowed}
+#amq-c-note{font-size:12px;color:#666;margin-top:4px;line-height:1.6}
+#amq-panel2 input[type=text]{margin-bottom:2px}
+.amq-sel{flex:1;padding:7px;border:1px solid #aaa;border-radius:5px;font:14px "Hacen Tunisia",Tahoma,Arial}
+.amq-sub{font-size:13px;margin-top:8px}
+.amq-sub label{display:flex;gap:6px;align-items:center;cursor:pointer}
+#amq-c-list{border:1px solid #ccc;border-radius:6px;margin-top:6px;max-height:250px;overflow:auto}
+#amq-c-list label{display:flex;align-items:center;gap:8px;padding:5px 10px;font-size:14px;cursor:pointer;border-bottom:1px solid #eee}
+#amq-c-list label:hover{background:#f4f9ff}
+#amq-c-list small{color:#777;margin-right:auto}
+
+/* keep check boxes / radios visible even if the site CSS hides or restyles native inputs */
+#amq-overlay input[type=checkbox],#amq-overlay2 input[type=checkbox],#amq3-overlay input[type=checkbox],#amq4-overlay input[type=checkbox],
+#amq-overlay input[type=radio],#amq-overlay2 input[type=radio],#amq3-overlay input[type=radio],#amq4-overlay input[type=radio]{
+  all:revert !important;
+  -webkit-appearance:auto !important;appearance:auto !important;
+  display:inline-block !important;visibility:visible !important;opacity:1 !important;position:static !important;
+  width:16px !important;height:16px !important;min-width:16px !important;margin:0 4px !important;
+  clip:auto !important;transform:none !important;pointer-events:auto !important;accent-color:#21ba45;cursor:pointer}
+#amq-overlay input[type=checkbox]::before,#amq-overlay input[type=checkbox]::after,#amq-overlay2 input[type=checkbox]::before,#amq-overlay2 input[type=checkbox]::after,
+#amq3-overlay input[type=checkbox]::before,#amq3-overlay input[type=checkbox]::after,#amq4-overlay input[type=checkbox]::before,#amq4-overlay input[type=checkbox]::after{content:none !important}

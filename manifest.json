@@ -1,0 +1,96 @@
+{
+  "manifest_version": 3,
+  "name": "مساعد أماتي ح.نورالدين",
+  "version": "2.5.0",
+  "description": "أدوات مساعدة لمنصة أمتي: طباعة قوائم الأفواج والموظفين والشهادات والإحصائيات، ومساعد إسناد المواد للأساتذة.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://amatti.education.dz/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://amatti.education.dz/scolarite/dossier_eleves/eleves*",
+        "https://amatti.education.dz/home_page*"
+      ],
+      "js": [
+        "pdf-lib.min.js",
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://amatti.education.dz/pers/personnel*",
+        "https://amatti.education.dz/scolarite/passage_eleves/dossier_eleve*",
+        "https://amatti.education.dz/scolarite/transferts/transfertDemande*",
+        "https://amatti.education.dz/scolarite/en_chiffre/general_stat*"
+      ],
+      "js": [
+        "bridge-main.js"
+      ],
+      "world": "MAIN",
+      "all_frames": true,
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://amatti.education.dz/scolarite/dossier_eleves/eleves*",
+        "https://amatti.education.dz/pers/personnel*",
+        "https://amatti.education.dz/home_page*",
+        "https://amatti.education.dz/el_isnad*"
+      ],
+      "js": [
+        "pdf-lib.min.js",
+        "staff-print.js",
+        "isnad.js",
+        "staff.js"
+      ],
+      "css": [
+        "staff.css",
+        "isnad.css"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://amatti.education.dz/scolarite/dossier_eleves/eleves*",
+        "https://amatti.education.dz/home_page*",
+        "https://amatti.education.dz/pers/personnel*",
+        "https://amatti.education.dz/scolarite/passage_eleves/dossier_eleve*",
+        "https://amatti.education.dz/scolarite/transferts/transfertDemande*",
+        "https://amatti.education.dz/scolarite/en_chiffre/general_stat*"
+      ],
+      "js": [
+        "pdf-lib.min.js",
+        "staff-print.js",
+        "affairs.js"
+      ],
+      "css": [
+        "affairs.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "fonts/*"
+      ],
+      "matches": [
+        "https://amatti.education.dz/*"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "minimum_chrome_version": "111"
+}
